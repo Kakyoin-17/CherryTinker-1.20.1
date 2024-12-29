@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="cherrytinker"
+version="1.0.0"
+displayName="Cherry Tinker"
+authors="Kakyoin17"
+description='''Cherryyyyyyy is best.'''
+
+[[dependencies.cherrytinker]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.cherrytinker]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.cherrytinker]]
+modId="tconstruct"
+mandatory=true
+versionRange="[1.20.1-3.9.0.1,)"
+ordering="AFTER"
+side="BOTH"
