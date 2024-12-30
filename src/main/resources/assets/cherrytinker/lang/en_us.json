@@ -1,8 +1,16 @@
 {
   "item.cherrytinker.cherry":"Cherry",
+  "item.cherrytinker.cherrygem": "CherryGem",
+  "item.cherrytinker.enchantedgold_ingot": "Egold Ingot",
+  "item.cherrytinker.enchanted_golden_carrot": "Enchanted Golden Carrot",
 
   "block.cherrytinker.cherry_bush": "CherryPlant",
   "block.cherrytinker.egold_block": "Block of Enchantedgold",
   "block.cherrytinker.cherrygem_ore": "CherryGemstone",
-  "block.cherrytinker.deepslate_cherrygem_ore": "DeepslateCherryGemStone"
+  "block.cherrytinker.deepslate_cherrygem_ore": "DeepslateCherryGemStone",
+
+
+
+  "CherryTinkerMain": "CherryTinker | Main",
+  "CherryTinkerTool": "CherryTinker | Tool"
 }

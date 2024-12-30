@@ -1,6 +1,7 @@
 package com.Kakyoin17.cherrytinker;
 
 import com.Kakyoin17.cherrytinker.registry.ModBlocks;
+import com.Kakyoin17.cherrytinker.registry.ModCreativeModeTab;
 import com.Kakyoin17.cherrytinker.registry.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -43,6 +44,7 @@ public class CherryTinker
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(bus);
         ModBlocks.register(bus);
+        ModCreativeModeTab.register(bus);
     }
 
 }
