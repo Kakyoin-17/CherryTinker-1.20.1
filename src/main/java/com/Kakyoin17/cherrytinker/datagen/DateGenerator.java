@@ -27,5 +27,6 @@ public class DateGenerator {
                         BlockLootTables::new,
                         LootContextParamSets.BLOCK))));
         generator.addProvider(event.includeServer(),new Recipes(packoutput));
+        generator.addProvider(event.includeServer(),new GlobalLootModifier(packoutput,MODID));
     }
 }
