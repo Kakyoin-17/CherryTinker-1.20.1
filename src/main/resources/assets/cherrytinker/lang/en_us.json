@@ -1,0 +1,8 @@
+{
+  "item.cherrytinker.cherry":"Cherry",
+
+  "block.cherrytinker.cherry_bush": "CherryPlant",
+  "block.cherrytinker.egold_block": "Block of Enchantedgold",
+  "block.cherrytinker.cherrygem_ore": "CherryGemstone",
+  "block.cherrytinker.deepslate_cherrygem_ore": "DeepslateCherryGemStone"
+}
