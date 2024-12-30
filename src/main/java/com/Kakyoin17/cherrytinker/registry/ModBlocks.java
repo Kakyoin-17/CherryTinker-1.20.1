@@ -17,12 +17,12 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,MODID);
     //Block
     public static final RegistryObject<Block> egoldblock = BLOCKS.register("egold_block",()-> new Block(BlockBehaviour.Properties.of()
-            .strength(6f).requiresCorrectToolForDrops().lightLevel(value -> 15)));
+            .strength(6f,3600000F).requiresCorrectToolForDrops().lightLevel(value -> 15)));
     //Ore
     public static final RegistryObject<Block> cherrygemore =BLOCKS.register("cherrygem_ore",()-> new DropExperienceBlock(BlockBehaviour.Properties.of()
-            .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(7,17)));
+            .strength(3.0F,3.0F).requiresCorrectToolForDrops(), UniformInt.of(3,17)));
     public static final RegistryObject<Block> deepslatecherrygemore =BLOCKS.register("deepslate_cherrygem_ore",()-> new DropExperienceBlock(BlockBehaviour.Properties.of()
-            .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(7,17)));
+            .strength(4.5F,3.0F).requiresCorrectToolForDrops(), UniformInt.of(3,17)));
     //Plant
     public static final RegistryObject<Block> cherrybush = BLOCKS.register("cherry_bush",()->new CherryBush(BlockBehaviour.Properties.of()
             .randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH)));

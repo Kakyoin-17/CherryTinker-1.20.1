@@ -9,6 +9,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE;
 import static net.minecraft.tags.BlockTags.NEEDS_IRON_TOOL;
 
 public class BlockTags extends BlockTagsProvider {
@@ -21,5 +22,8 @@ public class BlockTags extends BlockTagsProvider {
         tag(NEEDS_IRON_TOOL).add(ModBlocks.egoldblock.get());
         tag(NEEDS_IRON_TOOL).add(ModBlocks.cherrygemore.get());
         tag(NEEDS_IRON_TOOL).add(ModBlocks.deepslatecherrygemore.get());
+        tag(MINEABLE_WITH_PICKAXE).add(ModBlocks.egoldblock.get());
+        tag(MINEABLE_WITH_PICKAXE).add(ModBlocks.cherrygemore.get());
+        tag(MINEABLE_WITH_PICKAXE).add(ModBlocks.deepslatecherrygemore.get());
     }
 }
