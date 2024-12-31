@@ -1,10 +1,7 @@
 package com.Kakyoin17.cherrytinker;
 
 import com.Kakyoin17.cherrytinker.datagen.GlobalLootModifier;
-import com.Kakyoin17.cherrytinker.registry.ModBlocks;
-import com.Kakyoin17.cherrytinker.registry.ModCreativeModeTabs;
-import com.Kakyoin17.cherrytinker.registry.ModItems;
-import com.Kakyoin17.cherrytinker.registry.ModLootModifiers;
+import com.Kakyoin17.cherrytinker.registry.*;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -22,8 +19,12 @@ public class CherryTinker
         var bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(bus);
         ModBlocks.register(bus);
+        ModFluids.register(bus);
         ModCreativeModeTabs.register(bus);
         ModLootModifiers.register(bus);
     }
 
+    public static String makeDescriptionId(String type,String name){
+        return type + ".cherrytinker" + name;
+    }
 }

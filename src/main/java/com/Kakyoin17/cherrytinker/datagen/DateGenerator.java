@@ -28,5 +28,9 @@ public class DateGenerator {
                         LootContextParamSets.BLOCK))));
         generator.addProvider(event.includeServer(),new Recipes(packoutput));
         generator.addProvider(event.includeServer(),new GlobalLootModifier(packoutput,MODID));
+        generator.addProvider(event.includeServer(),new FluidTags(packoutput,lookupProvider));
+
+        generator.addProvider(event.includeClient(),new FluidBucketModelProvider(packoutput,MODID));
+        generator.addProvider(event.includeClient(),new FluidTextureProvider(packoutput));
     }
 }

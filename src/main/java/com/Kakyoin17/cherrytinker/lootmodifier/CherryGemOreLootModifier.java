@@ -35,7 +35,7 @@ public class CherryGemOreLootModifier extends LootModifier {
 
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> objectArrayList, LootContext lootContext) {
-        objectArrayList.add(new ItemStack(ModItems.CherryGem.get(),num));
+        objectArrayList.add(new ItemStack(ModItems.Cherry.get(),num));
         return objectArrayList;
     }
 

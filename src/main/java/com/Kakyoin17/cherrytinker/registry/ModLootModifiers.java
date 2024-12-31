@@ -13,7 +13,7 @@ import static com.Kakyoin17.cherrytinker.CherryTinker.MODID;
 public class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLOBAL_LOOT_MODIFIER = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS,MODID);
     //Block Loot
-    public static final RegistryObject<Codec<CherryGemOreLootModifier>> cherrygemorelootmodifier = GLOBAL_LOOT_MODIFIER.register("cherrygem_by_cherrygemore",CherryGemOreLootModifier.CODEC);
+    public static final RegistryObject<Codec<CherryGemOreLootModifier>> cherrygemorelootmodifier = GLOBAL_LOOT_MODIFIER.register("cherry_by_cherrygemore",CherryGemOreLootModifier.CODEC);
 
     public static void register(IEventBus eventBus) {GLOBAL_LOOT_MODIFIER.register(eventBus);}
 }

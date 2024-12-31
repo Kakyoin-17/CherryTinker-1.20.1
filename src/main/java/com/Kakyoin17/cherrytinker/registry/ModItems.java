@@ -6,14 +6,13 @@ import com.Kakyoin17.cherrytinker.custom.EnchantedGoldenCarrotItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.fluids.item.ContainerFoodItem;
 
 import static com.Kakyoin17.cherrytinker.CherryTinker.MODID;
 
@@ -30,6 +29,13 @@ public class ModItems {
                     .food(new FoodProperties.Builder()
                     .nutrition(4).saturationMod(0.5f).alwaysEat().fast()
                     .build())));
+    public static final RegistryObject<Item> CherryJuiceBottle = ITEMS.register("cherry_juice",()-> new ContainerFoodItem.FluidContainerFoodItem(
+            new Item.Properties()
+            .food(new FoodProperties.Builder()
+                    .nutrition(4).saturationMod(1.0f).alwaysEat().fast()
+                    .effect(new MobEffectInstance(MobEffects.HEAL,1,0),1.0F)
+                    .build())
+                    .craftRemainder(Items.GLASS_BOTTLE),()-> new FluidStack(ModFluids.cherryjuice.get(),250)));
     public static final RegistryObject<Item> EnchantedGoldenCarrot = ITEMS.register("enchanted_golden_carrot", ()->new EnchantedGoldenCarrotItem(
             new Item.Properties().rarity(Rarity.EPIC)
                     .food(new FoodProperties.Builder()
@@ -41,6 +47,19 @@ public class ModItems {
     public static final RegistryObject<Item> CherryGem = ITEMS.register("cherrygem",()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EnchantedGoldIngot = ITEMS.register("enchantedgold_ingot", ()->new EnchantedGoldIngot(
                     new Item.Properties().rarity(Rarity.EPIC)));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

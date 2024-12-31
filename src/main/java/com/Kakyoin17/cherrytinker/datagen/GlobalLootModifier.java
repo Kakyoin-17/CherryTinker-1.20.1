@@ -19,11 +19,11 @@ public class GlobalLootModifier extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-        add("cherrygem_by_cherrygemore",new CherryGemOreLootModifier(
+        add("cherry_by_cherrygemore",new CherryGemOreLootModifier(
                 new LootItemCondition[]{
                         LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.cherrygemore.get()).build(),
                         MatchTool.toolMatches(ItemPredicate.Builder.item().hasEnchantment
-                                (new EnchantmentPredicate(Enchantments.BLOCK_FORTUNE, MinMaxBounds.Ints.atLeast(3)))).build()
+                        (new EnchantmentPredicate(Enchantments.BLOCK_FORTUNE, MinMaxBounds.Ints.atLeast(3)))).build()
                 },3
         ));
     }

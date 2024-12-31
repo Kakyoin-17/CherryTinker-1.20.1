@@ -1,0 +1,23 @@
+{
+  "type": "cherrytinker:cherry_by_cherrygemore",
+  "conditions": [
+    {
+      "block": "cherrytinker:cherrygem_ore",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "enchantments": [
+          {
+            "enchantment": "minecraft:fortune",
+            "levels": {
+              "min": 3
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "num": 3
+}
