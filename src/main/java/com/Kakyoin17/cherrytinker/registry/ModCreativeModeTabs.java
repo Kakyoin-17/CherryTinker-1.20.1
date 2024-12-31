@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CherryGem.get());
                         output.accept(ModItems.Cherry.get());
+                        output.accept(ModItems.CherryJuiceBottle.get());
                         output.accept(ModItems.MlyPotato.get());
                         output.accept(ModItems.EnchantedGoldenCarrot.get());
                         output.accept(ModItems.EnchantedGoldIngot.get());

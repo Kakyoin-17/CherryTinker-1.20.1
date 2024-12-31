@@ -21,6 +21,7 @@ public class ModItemModelGen extends net.minecraftforge.client.model.generators.
     @Override
     protected void registerModels() {
         itemGenerateModel(ModItems.MlyPotato.get(),resourceItem(itemName(ModItems.MlyPotato.get())));
+        itemGenerateModel(ModItems.CherryJuiceBottle.get(),resourceItem(itemName(ModItems.CherryJuiceBottle.get())));
     }
     //方法
     public void itemGenerateModel(Item item, ResourceLocation texture){

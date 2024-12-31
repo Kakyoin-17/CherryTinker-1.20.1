@@ -30,7 +30,7 @@ public class RainbowText {
 
         return sb.toString();
     }
-
+    //颜色表，轮换时间（越大颜色切换越慢）
     public static String makeColour(String input) {
         return formatting(input, colour, 80.0);
     }
@@ -53,6 +53,7 @@ public class RainbowText {
     public static String makeColour17(String input){
         return  formatting(input,colour17,200);
     }
+    //颜色表，添加想要的颜色
     static {
         colour = new ChatFormatting[]{ChatFormatting.RED, ChatFormatting.GOLD, ChatFormatting.YELLOW, ChatFormatting.GREEN, ChatFormatting.AQUA, ChatFormatting.BLUE, ChatFormatting.LIGHT_PURPLE};
         colour2 = new ChatFormatting[]{ChatFormatting.RED, ChatFormatting.DARK_RED, ChatFormatting.YELLOW, ChatFormatting.GOLD, ChatFormatting.LIGHT_PURPLE,ChatFormatting.AQUA};

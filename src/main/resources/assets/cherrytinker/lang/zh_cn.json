@@ -1,8 +1,10 @@
 {
   "item.cherrytinker.cherry":"樱桃",
   "item.cherrytinker.cherrygem": "樱桃宝石",
+  "item.cherrytinker.cherry_juice": "樱桃汁",
   "item.cherrytinker.enchantedgold_ingot": "附魔金锭",
   "item.cherrytinker.enchanted_golden_carrot": "附魔金胡萝卜",
+  "item.cherrytinker.mlypotato": "马芋铃",
 
   "block.cherrytinker.cherry_bush": "樱桃植株",
   "block.cherrytinker.egold_block": "附魔金块",
@@ -11,5 +13,8 @@
 
 
   "CherryTinkerMain": "樱桃工匠 | 主要",
-  "CherryTinkerTool": "樱桃工匠 | 工具"
+  "CherryTinkerTool": "樱桃工匠 | 工具",
+
+  "Right click on specific fluid at specific time ?": "在特定时间对特定流体右键试?",
+  "Press SHIFT for more info": "按下SHIFT查看提示"
 }
