@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cherrygemore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cherrytinker:cherrygemore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cherrygem_from_blasting_cherrygemore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cherrygemore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cherrygem_from_blasting_cherrygemore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

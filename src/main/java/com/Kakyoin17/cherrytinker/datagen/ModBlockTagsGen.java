@@ -12,8 +12,8 @@ import java.util.concurrent.CompletableFuture;
 import static net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE;
 import static net.minecraft.tags.BlockTags.NEEDS_IRON_TOOL;
 
-public class BlockTags extends BlockTagsProvider {
-    public BlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
+public class ModBlockTagsGen extends BlockTagsProvider {
+    public ModBlockTagsGen(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, modId, existingFileHelper);
     }
 

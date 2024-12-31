@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslatecherrygemore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cherrytinker:deepslatecherrygemore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cherrygem_from_smelting_deepslatecherrygemore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslatecherrygemore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cherrygem_from_smelting_deepslatecherrygemore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

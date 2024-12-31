@@ -20,10 +20,10 @@ public class DateGenerator {
         var existingFileHelper = event.getExistingFileHelper();
         var lookupProvider = event.getLookupProvider();
         //Server
-        generator.addProvider(event.includeServer(),new BlockTags(packoutput,lookupProvider,MODID,existingFileHelper));
+        generator.addProvider(event.includeServer(),new ModBlockTagsGen(packoutput,lookupProvider,MODID,existingFileHelper));
         generator.addProvider(event.includeServer(),new LootTableProvider(packoutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTables::new, LootContextParamSets.BLOCK))));
-        generator.addProvider(event.includeServer(),new Recipes(packoutput));
+        generator.addProvider(event.includeServer(),new ModRecipesGen(packoutput));
         generator.addProvider(event.includeServer(),new GlobalLootModifier(packoutput,MODID));
         generator.addProvider(event.includeServer(),new FluidTags(packoutput,lookupProvider));
         generator.addProvider(event.includeServer(),new ModWorldGen(packoutput,lookupProvider));

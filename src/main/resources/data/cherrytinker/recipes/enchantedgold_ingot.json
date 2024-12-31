@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cherrytinker:egoldblock"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "cherrytinker:enchantedgold_ingot"
+  }
+}
