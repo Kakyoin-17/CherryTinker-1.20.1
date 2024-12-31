@@ -1,5 +1,6 @@
 package com.Kakyoin17.cherrytinker.registry;
 
+import com.Kakyoin17.cherrytinker.custom.CherryGemItem;
 import com.Kakyoin17.cherrytinker.custom.Egoldblockitem;
 import com.Kakyoin17.cherrytinker.custom.EnchantedGoldIngot;
 import com.Kakyoin17.cherrytinker.custom.EnchantedGoldenCarrotItem;
@@ -44,7 +45,7 @@ public class ModItems {
                     .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE,18000,0),1.0F)
                     .build())));
     //Material
-    public static final RegistryObject<Item> CherryGem = ITEMS.register("cherrygem",()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CherryGem = ITEMS.register("cherrygem",()-> new CherryGemItem(new Item.Properties()));
     public static final RegistryObject<Item> EnchantedGoldIngot = ITEMS.register("enchantedgold_ingot", ()->new EnchantedGoldIngot(
                     new Item.Properties().rarity(Rarity.EPIC)));
 
