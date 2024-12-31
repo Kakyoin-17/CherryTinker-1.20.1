@@ -18,14 +18,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("CherryTinkerMain"))
                     .icon(()-> new ItemStack(ModItems.Cherry.get()))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.CherryGem.get());
                         output.accept(ModItems.Cherry.get());
                         output.accept(ModItems.MlyPotato.get());
                         output.accept(ModItems.EnchantedGoldenCarrot.get());
                         output.accept(ModItems.EnchantedGoldIngot.get());
-                        output.accept(ModItems.egoldblockitem.get());
-                        output.accept(ModItems.CherryGem.get());
-                        output.accept(ModItems.cherrygemoreitem.get());
-                        output.accept(ModItems.deepslatecherrygem_oreitem.get());
+                        output.accept(ModBlocks.egoldblock.get());
+                        output.accept(ModBlocks.cherrygemore.get());
+                        output.accept(ModBlocks.deepslatecherrygemore.get());
 
                     })
                     .build());
@@ -33,9 +33,9 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> CherryTinkerToolTab = CREATIVE_MODE_TABS.register("cherrytinkertooltab",
             ()-> CreativeModeTab.builder()
                     .title(Component.translatable("CherryTinkerTool"))
-                    .icon(()->new ItemStack(ModItems.egoldblockitem.get()))
+                    .icon(()->new ItemStack(ModItems.egoldblock.get()))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.egoldblockitem.get());
+                        output.accept(ModItems.egoldblock.get());
                     })
                     .build());
     //Bus

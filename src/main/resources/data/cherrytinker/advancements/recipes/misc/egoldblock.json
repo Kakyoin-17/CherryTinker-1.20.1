@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cherrytinker:egoldblockitem"
+        "recipe": "cherrytinker:egoldblock"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "cherrytinker:egoldblockitem"
+      "cherrytinker:egoldblock"
     ]
   },
   "sends_telemetry_event": false

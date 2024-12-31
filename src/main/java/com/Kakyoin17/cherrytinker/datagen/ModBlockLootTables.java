@@ -5,11 +5,8 @@ import com.Kakyoin17.cherrytinker.registry.ModBlocks;
 import com.Kakyoin17.cherrytinker.registry.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.packs.VanillaBlockLoot;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -19,13 +16,14 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePrope
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
-public class BlockLootTables extends VanillaBlockLoot {
+public class ModBlockLootTables extends VanillaBlockLoot {
     @Override
     protected Iterable<Block> getKnownBlocks(){
         return ModBlocks.BLOCKS.getEntries().stream()
                 .flatMap(RegistryObject::stream)
                 ::iterator;
     }
+    //添加
     public void generate(){
         dropSelf(ModBlocks.egoldblock.get());
 

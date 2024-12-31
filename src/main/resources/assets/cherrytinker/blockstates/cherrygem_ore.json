@@ -1,6 +1,7 @@
 {
   "variants": {
-    "":
-    { "model": "cherrytinker:block/cherrygem_ore" }
+    "": {
+      "model": "cherrytinker:block/cherrygem_ore"
+    }
   }
 }

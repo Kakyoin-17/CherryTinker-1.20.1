@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cherrytinker:egoldblockitem"
+          "name": "cherrytinker:egoldblock"
         }
       ],
       "rolls": 1.0

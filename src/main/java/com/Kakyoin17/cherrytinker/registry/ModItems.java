@@ -21,9 +21,9 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =DeferredRegister.create(ForgeRegistries.ITEMS,MODID);
 
     //Block item
-    public static final RegistryObject<Item> egoldblockitem = ITEMS.register("egoldblockitem",()-> new Egoldblockitem(ModBlocks.egoldblock.get(),new Item.Properties().rarity(Rarity.EPIC)));
-    public static final RegistryObject<Item> cherrygemoreitem = ITEMS.register("cherrygemoreitem",()-> new BlockItem(ModBlocks.cherrygemore.get(),new Item.Properties()));
-    public static final RegistryObject<Item> deepslatecherrygem_oreitem = ITEMS.register("deepslatecherrygemoreitem",()-> new BlockItem(ModBlocks.deepslatecherrygemore.get(),new Item.Properties()));
+    public static final RegistryObject<Item> egoldblock = ITEMS.register("egoldblock",()-> new Egoldblockitem(ModBlocks.egoldblock.get(),new Item.Properties().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> cherrygemore = ITEMS.register("cherrygemore",()-> new BlockItem(ModBlocks.cherrygemore.get(),new Item.Properties()));
+    public static final RegistryObject<Item> deepslatecherrygem_ore = ITEMS.register("deepslatecherrygemore",()-> new BlockItem(ModBlocks.deepslatecherrygemore.get(),new Item.Properties()));
     //Food
     public static final RegistryObject<Item> Cherry = ITEMS.register("cherry",()-> new ItemNameBlockItem(ModBlocks.cherrybush.get(),
             new Item.Properties()

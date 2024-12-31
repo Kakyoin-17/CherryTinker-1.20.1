@@ -21,11 +21,8 @@ public class DateGenerator {
         var lookupProvider = event.getLookupProvider();
         //Server
         generator.addProvider(event.includeServer(),new BlockTags(packoutput,lookupProvider,MODID,existingFileHelper));
-        generator.addProvider(event.includeServer(),new LootTableProvider(packoutput,
-                Collections.emptySet(),
-                List.of(new LootTableProvider.SubProviderEntry(
-                        BlockLootTables::new,
-                        LootContextParamSets.BLOCK))));
+        generator.addProvider(event.includeServer(),new LootTableProvider(packoutput, Collections.emptySet(),
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTables::new, LootContextParamSets.BLOCK))));
         generator.addProvider(event.includeServer(),new Recipes(packoutput));
         generator.addProvider(event.includeServer(),new GlobalLootModifier(packoutput,MODID));
         generator.addProvider(event.includeServer(),new FluidTags(packoutput,lookupProvider));
@@ -34,6 +31,7 @@ public class DateGenerator {
         generator.addProvider(event.includeClient(),new FluidBucketModelProvider(packoutput,MODID));
         generator.addProvider(event.includeClient(),new FluidTextureProvider(packoutput));
         generator.addProvider(event.includeClient(),new ModItemModelGen(packoutput,existingFileHelper));
+        generator.addProvider(event.includeClient(),new ModBlockModelGen(packoutput,existingFileHelper));
 
     }
 }

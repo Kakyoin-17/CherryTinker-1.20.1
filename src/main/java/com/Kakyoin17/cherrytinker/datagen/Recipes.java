@@ -16,7 +16,7 @@ public class Recipes extends RecipeProvider {
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.egoldblockitem.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.egoldblock.get())
                 .pattern("AAA")
                 .pattern("AAA")
                 .pattern("AAA")
