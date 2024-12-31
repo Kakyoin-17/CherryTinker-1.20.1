@@ -1,6 +1,7 @@
 package com.Kakyoin17.cherrytinker.registry;
 
 import com.Kakyoin17.cherrytinker.custom.CherryBush;
+import com.Kakyoin17.cherrytinker.custom.EgoldBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
@@ -16,7 +17,7 @@ import static com.Kakyoin17.cherrytinker.CherryTinker.MODID;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,MODID);
     //Block
-    public static final RegistryObject<Block> egoldblock = BLOCKS.register("egold_block",()-> new Block(BlockBehaviour.Properties.of()
+    public static final RegistryObject<Block> egoldblock = BLOCKS.register("egold_block",()-> new EgoldBlock(BlockBehaviour.Properties.of()
             .strength(6f,3600000F).requiresCorrectToolForDrops().lightLevel(value -> 15)));
     //Ore
     public static final RegistryObject<Block> cherrygemore =BLOCKS.register("cherrygem_ore",()-> new DropExperienceBlock(BlockBehaviour.Properties.of()

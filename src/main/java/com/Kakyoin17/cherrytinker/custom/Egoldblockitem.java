@@ -18,16 +18,21 @@ public class Egoldblockitem extends BlockItem {
     public Egoldblockitem(Block pBlock, Properties pProperties) {
         super(pBlock, pProperties);
     }
-
+    //具有附魔光效
     @Override
     @OnlyIn(Dist.CLIENT)
     public boolean isFoil(@NotNull ItemStack itemStack) {
         return true;
     }
-
+    //为名字添加动态颜色效果
     @Override
     public Component getName(ItemStack pStack) {
         var com = Component.translatable(this.getDescriptionId(pStack));
         return Component.literal(RainbowText.makeColour17(com.getString()));
+    }
+    //添加提示
+    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag){
+        components.add(Component.literal(RainbowText.makeColour17("Try it by stepping on it")));
+        super.appendHoverText(itemStack,level,components,tooltipFlag);
     }
 }

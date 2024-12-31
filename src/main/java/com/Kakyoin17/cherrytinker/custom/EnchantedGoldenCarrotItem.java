@@ -17,17 +17,17 @@ public class EnchantedGoldenCarrotItem extends Item {
     public EnchantedGoldenCarrotItem(Properties properties) {
         super(properties);
     }
-    //是否具有附魔光效
+    //具有附魔光效
     @Override
     @OnlyIn(Dist.CLIENT)
     public boolean isFoil(@NotNull ItemStack itemStack) {
         return true;
     }
-    //对名字添加动态颜色效果
+    //为名字添加动态颜色效果
     @Override
     public Component getName(ItemStack pStack) {
         var com = Component.translatable(this.getDescriptionId(pStack));
-        return Component.literal(RainbowText.makeColour17(com.getString()));
+        return Component.literal(RainbowText.makeColour3(com.getString()));
     }
 }
 

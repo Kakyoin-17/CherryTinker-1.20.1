@@ -12,13 +12,13 @@ public class EnchantedGoldIngot extends Item {
     public EnchantedGoldIngot(Properties pProperties) {
         super(pProperties);
     }
-
+    //具有附魔光效
     @Override
     @OnlyIn(Dist.CLIENT)
     public boolean isFoil(@NotNull ItemStack itemStack) {
         return true;
     }
-
+    //为名字添加动态颜色效果
     @Override
     public Component getName(ItemStack pStack) {
         var com = Component.translatable(this.getDescriptionId(pStack));

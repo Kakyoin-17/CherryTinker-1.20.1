@@ -24,7 +24,7 @@ public class CherryGemItem extends Item  {
     public CherryGemItem(Properties properties) {
         super(properties);
     }
-    //实现特殊功能
+    //实现特殊功能（转换流体）
     @Override
     public InteractionResult useOn(UseOnContext context){
         Level level = context.getLevel();
@@ -51,7 +51,7 @@ public class CherryGemItem extends Item  {
         }
         return  InteractionResult.sidedSuccess(level.isClientSide);
     }
-    //提示
+    //添加提示
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag){
         if(Screen.hasShiftDown()){
