@@ -19,7 +19,7 @@ public class DateGenerator {
         var packoutput = generator.getPackOutput();
         var existingFileHelper = event.getExistingFileHelper();
         var lookupProvider = event.getLookupProvider();
-
+        //Server
         generator.addProvider(event.includeServer(),new BlockTags(packoutput,lookupProvider,MODID,existingFileHelper));
         generator.addProvider(event.includeServer(),new LootTableProvider(packoutput,
                 Collections.emptySet(),
@@ -29,8 +29,10 @@ public class DateGenerator {
         generator.addProvider(event.includeServer(),new Recipes(packoutput));
         generator.addProvider(event.includeServer(),new GlobalLootModifier(packoutput,MODID));
         generator.addProvider(event.includeServer(),new FluidTags(packoutput,lookupProvider));
-
+        generator.addProvider(event.includeServer(),new ModWorldGen(packoutput,lookupProvider));
+        //Client
         generator.addProvider(event.includeClient(),new FluidBucketModelProvider(packoutput,MODID));
         generator.addProvider(event.includeClient(),new FluidTextureProvider(packoutput));
+
     }
 }

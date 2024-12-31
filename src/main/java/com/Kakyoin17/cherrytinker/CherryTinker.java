@@ -14,14 +14,15 @@ public class CherryTinker
     public static final String MODID = "cherrytinker";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public CherryTinker()
+    public CherryTinker(FMLJavaModLoadingContext context)
     {
-        var bus = FMLJavaModLoadingContext.get().getModEventBus();
+        var bus = context.getModEventBus();
         ModItems.register(bus);
         ModBlocks.register(bus);
         ModFluids.register(bus);
         ModCreativeModeTabs.register(bus);
         ModLootModifiers.register(bus);
+
     }
 
     public static String makeDescriptionId(String type,String name){
