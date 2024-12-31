@@ -33,6 +33,7 @@ public class DateGenerator {
         //Client
         generator.addProvider(event.includeClient(),new FluidBucketModelProvider(packoutput,MODID));
         generator.addProvider(event.includeClient(),new FluidTextureProvider(packoutput));
+        generator.addProvider(event.includeClient(),new ModItemModelGen(packoutput,existingFileHelper));
 
     }
 }

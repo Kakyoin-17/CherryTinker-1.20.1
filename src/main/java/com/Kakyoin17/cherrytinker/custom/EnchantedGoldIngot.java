@@ -14,12 +14,6 @@ public class EnchantedGoldIngot extends Item {
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
-    public boolean isFoil(@NotNull ItemStack itemStack) {
-        return true;
-    }
-
-    @Override
     public Component getName(ItemStack pStack) {
         var com = Component.translatable(this.getDescriptionId(pStack));
         return Component.literal(RainbowText.makeColour17(com.getString()));

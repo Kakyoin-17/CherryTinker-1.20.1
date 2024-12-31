@@ -32,7 +32,7 @@ public class ModConfigureFeature {
         //矿物生成替换列表
         List<OreConfiguration.TargetBlockState> overworldCherryGemOres = List.of(
                 OreConfiguration.target(stoneReplaceables,ModBlocks.cherrygemore.get().defaultBlockState()),
-                OreConfiguration.target(stoneReplaceables,ModBlocks.deepslatecherrygemore.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceables,ModBlocks.deepslatecherrygemore.get().defaultBlockState()));
         //注册
         register(context,OVERWORLD_CHERRYGEM_ORE_KEY,Feature.ORE,new OreConfiguration(overworldCherryGemOres,7));//每矿脉矿物数量
 

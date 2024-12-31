@@ -48,7 +48,7 @@ public class ModItems {
     public static final RegistryObject<Item> CherryGem = ITEMS.register("cherrygem",()-> new CherryGemItem(new Item.Properties()));
     public static final RegistryObject<Item> EnchantedGoldIngot = ITEMS.register("enchantedgold_ingot", ()->new EnchantedGoldIngot(
                     new Item.Properties().rarity(Rarity.EPIC)));
-
+    public static final RegistryObject<Item> MlyPotato = ITEMS.register("mlypotato",()-> new Item(new Item.Properties()));
 
 
 

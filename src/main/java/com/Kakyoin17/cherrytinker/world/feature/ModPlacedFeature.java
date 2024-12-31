@@ -24,7 +24,7 @@ public class ModPlacedFeature {
         HolderGetter<ConfiguredFeature<?,?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
     //注册feature
     register(context, CHERRYGEM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfigureFeature.OVERWORLD_CHERRYGEM_ORE_KEY),
-            ModOrePlacement.commonOrePlacement(16, //每区块矿脉数量
+            ModOrePlacement.commonOrePlacement(7, //每区块矿脉数量
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));//平均分布(高度范围：底，高)
 
     }
